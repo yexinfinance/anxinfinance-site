@@ -1,0 +1,24 @@
+{
+    "name": "static",
+    "version": "0.0.0",
+    "authors": [
+        "Meng Yu <raineddream@gmail.com>",
+        ""
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.11.3",
+        "angular": "~1.4.4",
+        "angular-spinner": "~0.6.2"
+    },
+    "resolutions": {
+        "angular": "~1.4.4"
+    }
+}
