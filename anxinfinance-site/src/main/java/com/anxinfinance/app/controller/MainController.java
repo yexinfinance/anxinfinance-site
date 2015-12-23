@@ -12,6 +12,6 @@ public class MainController {
 
     @RequestMapping(path = "/index", method = GET)
     public String index(Model model) {
-        return "main";
+        return "main-site";
     }
 }
