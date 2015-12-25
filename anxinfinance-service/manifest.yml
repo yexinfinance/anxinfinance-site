@@ -1,0 +1,8 @@
+---
+applications:
+- name: anxifinance-service
+  memory: 256M
+  instances: 1
+  host: rest-service
+  domain: com.anxifinance.app
+  path: build/libs/anxifinance-service-0.1.0.jar
