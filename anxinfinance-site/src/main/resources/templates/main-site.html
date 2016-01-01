@@ -3,8 +3,34 @@
 <head>
     <title>安信金融</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link type="text/css" href="css/reset.css" rel="stylesheet" />
+    <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/compatibility/html5.js"></script>
+    <script type="text/javascript" src="js/compatibility/css3-mediaqueries.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <h1>Hello World</h1>
+    <section class="container-fluid outer-box" ng-app="site">
+        <div ui-view=""></div>
+    </section>
+
+    <footer>Copyright @ 安信金融科技 2015 All Rights Reserved 京ICP备13031685号－2</footer>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script type="text/javascript" src="js/common/app.js"></script>
+    <script type="text/javascript" src="js/site/app.js"></script>
+    <script type="text/javascript" src="js/site/controllers/home-controller.js"></script>
+
 </body>
 </html>

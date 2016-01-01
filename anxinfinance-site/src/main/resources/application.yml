@@ -1,0 +1,19 @@
+server.port: 8080
+
+---
+
+spring:
+  profiles.active: dev
+
+---
+
+spring:
+  profiles: dev
+  template.cache: false
+  thymeleaf.cache: false
+
+---
+
+spring:
+  profiles: prod
+  thymeleaf.cache: true   # it's default value
