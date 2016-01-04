@@ -9,11 +9,12 @@ spring:
 
 spring:
   profiles: dev
-  template.cache: false
-  thymeleaf.cache: false
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    templates_root: src/main/resources/templates/
 
 ---
 
 spring:
   profiles: prod
-  thymeleaf.cache: true   # it's default value
