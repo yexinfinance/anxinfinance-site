@@ -4,12 +4,11 @@
   padding: 0.9rem 0 0 1.8rem;
   top: 0;
   width: 100%;
-
-  li {
-    color: white;
-    font-size: 0.28rem;
-    font-weight: lighter;
-    line-height: 0.42rem;
-  }
 }
 
+.watchword li {
+  color: white;
+  font-size: 0.28rem;
+  font-weight: lighter;
+  line-height: 0.42rem;
+}
