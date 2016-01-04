@@ -9,6 +9,9 @@
     <link type="text/css" href="../static/css/reset.css" th:href="@{css/reset.css}" rel="stylesheet" />
     <link type="text/css" href="../static/bower_components/bootstrap/dist/css/bootstrap.min.css"  th:href="@{bower_components/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet" />
     <link type="text/css" href="../static/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" th:href="@{bower_components/bootstrap/dist/css/bootstrap-theme.min.css}" rel="stylesheet" />
+    <link type="text/css" href="../static/css/base.css" th:href="@{css/base.css}" rel="stylesheet" />
+
+    <link type="text/css" href="../static/generated_css/home.css" th:href="@{generated_css/home.css}" rel="stylesheet" />
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../static/js/compatibility/html5.js" th:src="@{js/compatibility/html5.js}"></script>
@@ -16,11 +19,11 @@
     <![endif]-->
 </head>
 <body>
-    <section class="container-fluid outer-box" ng-app="site">
+    <section class="sandbox" ng-app="site">
         <div ui-view=""></div>
-    </section>
 
-    <footer>Copyright @ 安信金融科技 2015 All Rights Reserved 京ICP备13031685号－2</footer>
+        <footer>Copyright @ 安信金融科技 2015 All Rights Reserved 京ICP备13031685号－2</footer>
+    </section>
 
     <script type="text/javascript" src="../static/bower_components/jquery/dist/jquery.min.js" th:src="@{bower_components/jquery/dist/jquery.min.js}"></script>
     <script type="text/javascript" src="../static/bower_components/angular/angular.js" th:src="@{bower_components/angular/angular.js}"></script>

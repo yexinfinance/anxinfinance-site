@@ -19,6 +19,3 @@ target/
 
 # bower
 bower_components/
-
-# sass
-css/
