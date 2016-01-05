@@ -29,6 +29,17 @@
     padding: 0 1rem;
   }
 
+  nav.dock-top {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+  }
+
+  nav.float {
+    background-color: white;
+    position: static;
+  }
+
   .brand {
     img {
       height: 0.52rem;

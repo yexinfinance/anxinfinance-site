@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-    <section class="sandbox" ng-app="site">
+    <section class="sandbox" id="sandbox" ng-app="site">
         <div ui-view=""></div>
 
         <footer>Copyright @ 安信金融科技 2015 All Rights Reserved 京ICP备13031685号－2</footer>
@@ -32,6 +32,7 @@
     <script type="text/javascript" src="../static/bower_components/angular-bootstrap/ui-bootstrap.min.js" th:src="@{bower_components/angular-bootstrap/ui-bootstrap.min.js}"></script>
     <script type="text/javascript" src="../static/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" th:src="@{bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js}"></script>
     <script type="text/javascript" src="../static/js/common/app.js" th:src="@{js/common/app.js}"></script>
+    <script type="text/javascript" src="../static/js/common/directives/hover-to-top.js" th:src="@{js/common/directives/hover-to-top.js}"></script>
     <script type="text/javascript" src="../static/js/site/app.js" th:src="@{js/site/app.js}"></script>
     <script type="text/javascript" src="../static/js/site/controllers/home-controller.js" th:src="@{js/site/controllers/home-controller.js}"></script>
 </body>
