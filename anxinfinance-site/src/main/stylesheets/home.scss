@@ -1,4 +1,9 @@
 .home {
+
+  header {
+    border-bottom: solid 1px #efefef;
+  }
+
   .watchword {
     display: block;
     position: absolute;
@@ -15,8 +20,9 @@
   }
 
   nav {
-    background-color: white;
     align-items: center;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
     display: flex;
     height: 0.65rem;
     justify-content: space-between;
@@ -52,6 +58,48 @@
   .menu-icon-sticky {
     display: none;
   }
+
+  .content {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 0.4rem;
+      margin: 0.45rem 0 0.3rem 0;
+    }
+
+    .articles {
+      width: 6rem;
+
+      li {
+        float: left;
+        padding: 0.1rem 0.15rem;
+
+        .article-title {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 2.7rem;
+        }
+
+        small {
+          color: #999;
+          display: block;
+        }
+      }
+    }
+
+    .more-articles {
+      border: solid 2px #213470;
+      border-radius: 0.06rem;
+      color: #213470;
+      margin-bottom: 0.2rem;
+      padding: 0.1rem 0.2rem;
+    }
+  }
 }
 
 @media screen and (max-width:1920px) and (min-width:640px) {
@@ -79,6 +127,20 @@
 
     .menu-icon-sticky {
       display: inline;
+    }
+
+    .content {
+      .articles {
+        width: 5rem;
+
+        li {
+          padding: 0.1rem 0;
+
+          .article-title {
+            width: 4.8rem;
+          }
+        }
+      }
     }
   }
 }
