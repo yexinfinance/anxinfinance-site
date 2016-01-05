@@ -19,3 +19,6 @@ target/
 
 # bower
 bower_components/
+
+# SASS
+generated_css/
