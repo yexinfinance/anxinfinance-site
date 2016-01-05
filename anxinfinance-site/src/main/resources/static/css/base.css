@@ -1,6 +1,20 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     color: #333;
     font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;
+}
+
+footer {
+    align-items: center;
+    background-color: #333;
+    color: white;
+    display: flex;
+    font-size: 0.14rem;
+    height: 0.35rem;
+    justify-content: center;
 }
 
 @media screen and (max-width:1920px) and (min-width:640px) {
@@ -67,12 +81,3 @@ body {
     max-width: 1080px;
 }
 
-.sandbox footer {
-    align-items: center;
-    background-color: #333;
-    color: white;
-    display: flex;
-    font-size: 0.14rem;
-    height: 0.35rem;
-    justify-content: center;
-}
