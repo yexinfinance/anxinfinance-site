@@ -1,3 +1,224 @@
-.production {
+@import 'mixin';
 
+$arrow-stick-height: 0.1rem;
+$arrow-stick-width: 1.7rem;
+$asset-end-color: #5fa4d7;
+$end-circle-outside-diameter: 2rem;
+$end-circle-inside-diameter: 1.8rem;
+$wealth-end-color: #8abb28;
+
+
+.production {
+  .content {
+    padding: 0.5rem 1.3rem;
+
+    .diagram-tip {
+      font-size: 0.2rem;
+      padding: 0.05rem;
+    }
+
+    .end2end {
+      padding: 0.2rem 0.8rem;
+      @include horizontal-space-between();
+
+      .asset-end {
+        @include vertical-align-center();
+
+        .diagram-tip {
+          color: $asset-end-color;
+        }
+      }
+
+      .wealth-end {
+        @include vertical-align-center();
+
+        .diagram-tip {
+          color: $wealth-end-color;
+        }
+      }
+
+      .end-outside {
+        height: $end-circle-outside-diameter;
+        width: $end-circle-outside-diameter;
+        @include horizontal-align-center();
+      }
+
+      .asset-end-outside {
+        background-color: #c8e5fa;
+      }
+
+      .wealth-end-outside {
+        background-color: #e5f0cb;
+      }
+
+      .end-inside {
+        color: white;
+        font-size: 0.2rem;
+        font-weight: lighter;
+        height: $end-circle-inside-diameter;
+        margin: 0;
+        width: $end-circle-inside-diameter;
+        @include vertical-align-center();
+      }
+
+      .asset-end-inside {
+        background-color: $asset-end-color
+      }
+
+      .wealth-end-inside {
+        background-color: $wealth-end-color
+      }
+
+      .arrows {
+        margin-top: -0.5rem;
+      }
+
+      .arrow-to-right {
+        align-items: flex-end;
+        display: flex;
+
+        .arrow-stick {
+          background-color: $asset-end-color;
+          height: $arrow-stick-height;
+          width: $arrow-stick-width;
+        }
+
+        img {
+          width: 0.38rem;
+        }
+      }
+
+      .arrow-to-left {
+        align-items: flex-start;
+        display: flex;
+
+        .arrow-stick {
+          background-color: $wealth-end-color;
+          height: $arrow-stick-height;
+          width: $arrow-stick-width;
+        }
+
+        img {
+          width: 0.38rem;
+        }
+      }
+
+      .channels {
+        margin: 0.05rem 0;
+        padding: 0 0.3rem;
+        @include horizontal-space-between();
+      }
+    }
+
+    @media screen and (max-width:580px) {
+      .end2end {
+        padding: 0.2rem 0;
+        .arrow-to-right {
+          .arrow-stick {
+            height: 0.07rem;
+            width: 0.6rem;
+          }
+        }
+
+        .arrow-to-left {
+          .arrow-stick {
+            height: 0.07rem;
+            width: 0.6rem;
+          }
+        }
+
+        .channels {
+          @include vertical-space-between();
+        }
+      }
+    }
+
+    @media screen and (max-width:480px) {
+      .end2end {
+        .channels {
+          font-size: 0.13rem;
+        }
+      }
+    }
+
+    @media screen and (max-width:414px) {
+      .end2end {
+        .channels {
+          font-size: 0.12rem;
+        }
+      }
+    }
+
+    .flows {
+      margin-top: -0.37rem;
+      @include horizontal-align-top();
+
+      .flow {
+        padding: 0 0.2rem;
+
+        label {
+          background-color: $asset-end-color;
+          border-radius: 0.15rem;
+          color: white;
+          font-size: 0.15rem;
+          font-weight: lighter;
+          margin-bottom: 0.2rem;
+          padding: 0.05rem 0.2rem;
+        }
+
+        li:before {
+          color: $asset-end-color;
+          content: "• ";
+        }
+      }
+    }
+
+    .application-scenarios {
+      border-top: solid 1px #e5e5e5;
+      @include vertical-align-center();
+
+      .intro {
+        padding: 0.6rem 0;
+
+        li {
+          font-size: 0.25rem;
+          text-align: center;
+        }
+      }
+
+      .scenarios {
+        width: 100%;
+        @include horizontal-align-center();
+
+        .scenario {
+          margin: 0 0.5rem;
+          @include vertical-align-center();
+
+          dd>img {
+            width: 1.5rem;
+          }
+        }
+      }
+
+      @media screen and (max-width:580px) {
+        .scenarios {
+          @include vertical-align-center();
+
+          .scenario {
+            margin: 0.2rem 0;
+
+            dd > img {
+              width: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:580px) {
+    .content {
+      padding: 0.5rem 0.7rem;
+    }
+  }
 }
