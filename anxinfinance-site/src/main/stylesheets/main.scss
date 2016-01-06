@@ -1,6 +1,7 @@
-$sandbox-width: 1080px;
 $default-menu-font-color: white;
 $default-font-color: #333;
+$disabled-menu-item-color: #aaa;
+$sandbox-width: 1080px;
 
 
 html {
@@ -119,10 +120,15 @@ footer {
 
       a {
         color: white;
+        padding: 0.06rem 0.03rem;
+      }
+
+      a.active {
+        border-bottom: solid 3px;
+        font-weight: bold;
       }
 
       a.disabled {
-        color: #aaa;
         cursor: default;
         text-decoration: none;
       }
@@ -151,6 +157,14 @@ footer {
       a {
         color: $default-menu-font-color;
       }
+
+      a.active {
+        border-bottom-color: $default-menu-font-color;
+      }
+
+      a.disabled {
+        color: $disabled-menu-item-color;
+      }
     }
   }
 
@@ -171,6 +185,14 @@ footer {
     .main-nav {
       a {
         color: $default-font-color;
+      }
+
+      a.active {
+        border-bottom-color: $default-font-color;
+      }
+
+      a.disabled {
+        color: $disabled-menu-item-color;
       }
     }
   }
