@@ -20,18 +20,18 @@
 </head>
 <body>
     <section class="sandbox" id="sandbox" ng-app="site">
-        <nav docked-menu="" ng-class="{'default': !shouldInvertColor, 'invert': shouldInvertColor}">
+        <nav docked-menu="" ng-class="{'invert': shouldInvertColor}">
             <div class="brand">
                 <img id="logo" src="../static/images/logo-white.png" th:src="@{images/logo-white.png}" />
                 <h3>安信金服<small>极速批贷专家</small></h3>
             </div>
             <ul class="list-inline main-nav">
-                <li><a class="active" href="#">首页</a></li>
-                <li><a class="disabled" href="#">大数据风控云</a></li>
-                <li><a class="disabled" href="#">产品</a></li>
-                <li><a class="disabled" href="#">客户关系</a></li>
-                <li><a class="disabled" href="#">服务体系</a></li>
-                <li><a class="disabled" href="#">关于我们</a></li>
+                <li class="active" ng-class="{'active': channel == 'home'}"><a ui-sref="home">首页</a></li>
+                <li class="disabled"><a href="#">大数据风控云</a></li>
+                <li class="disabled"><a href="#">产品</a></li>
+                <li class="disabled"><a href="#">客户关系</a></li>
+                <li class="disabled"><a href="#">服务体系</a></li>
+                <li class="disabled"><a href="#">关于我们</a></li>
             </ul>
             <img class="menu-icon-sticky" src="../images/menu-icon-sticky.png" />
         </nav>

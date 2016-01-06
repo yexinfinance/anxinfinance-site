@@ -88,6 +88,7 @@ footer {
 
   nav {
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     height: 0.65rem;
     justify-content: space-between;
@@ -103,12 +104,12 @@ footer {
       }
 
       h3 {
-        color: white;
+        color: $default-menu-font-color;
         font-size: 0.25rem;
         margin: -0.4rem 0 0 0.54rem;
 
         small {
-          color: white;
+          color: $default-menu-font-color;
           display: block;
           font-size: 0.12rem;
         }
@@ -118,53 +119,32 @@ footer {
     .main-nav {
       margin: 0;
 
-      a {
-        color: white;
-        padding: 0.06rem 0.03rem;
+      li {
+        padding: 0.04rem 0.03rem;
       }
 
-      a.active {
-        border-bottom: solid 3px;
+      li>a {
+        color: $default-menu-font-color;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      li.active {
+        border-bottom: solid 3px $default-menu-font-color;
         font-weight: bold;
       }
 
-      a.disabled {
+      li.disabled {
         cursor: default;
-        text-decoration: none;
+      }
+
+      li.disabled>a {
+        color: $disabled-menu-item-color;
       }
     }
 
     .menu-icon-sticky {
       display: none;
-    }
-  }
-
-  nav.default {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: none;
-
-    .brand {
-      h3 {
-        color: $default-menu-font-color;
-
-        small {
-          color: $default-menu-font-color;
-        }
-      }
-    }
-
-    .main-nav {
-      a {
-        color: $default-menu-font-color;
-      }
-
-      a.active {
-        border-bottom-color: $default-menu-font-color;
-      }
-
-      a.disabled {
-        color: $disabled-menu-item-color;
-      }
     }
   }
 
@@ -183,15 +163,15 @@ footer {
     }
 
     .main-nav {
-      a {
+      li>a {
         color: $default-font-color;
       }
 
-      a.active {
+      li.active {
         border-bottom-color: $default-font-color;
       }
 
-      a.disabled {
+      li.disabled>a {
         color: $disabled-menu-item-color;
       }
     }
