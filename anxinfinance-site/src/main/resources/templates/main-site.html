@@ -12,6 +12,7 @@
 
     <link type="text/css" href="../static/generated_css/main.css" th:href="@{generated_css/main.css}" rel="stylesheet" />
     <link type="text/css" href="../static/generated_css/home.css" th:href="@{generated_css/home.css}" rel="stylesheet" />
+    <link type="text/css" href="../static/generated_css/production.css" th:href="@{generated_css/production.css}" rel="stylesheet" />
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../static/js/compatibility/html5.js" th:src="@{js/compatibility/html5.js}"></script>
@@ -28,12 +29,12 @@
             <ul class="list-inline main-nav">
                 <li class="active" ng-class="{'active': channel == 'home'}"><a ui-sref="home">首页</a></li>
                 <li class="disabled"><a href="#">大数据风控云</a></li>
-                <li class="disabled"><a href="#">产品</a></li>
+                <li><a ui-sref="production">产品</a></li>
                 <li class="disabled"><a href="#">客户关系</a></li>
                 <li class="disabled"><a href="#">服务体系</a></li>
                 <li class="disabled"><a href="#">关于我们</a></li>
             </ul>
-            <img class="menu-icon-sticky" src="../images/menu-icon-sticky.png" />
+            <img class="menu-icon-sticky" src="../static/images/menu-icon-sticky.png" th:src="@{images/menu-icon-sticky.png}" />
         </nav>
 
         <div ui-view=""></div>
@@ -50,6 +51,7 @@
     <script type="text/javascript" src="../static/js/common/app.js" th:src="@{js/common/app.js}"></script>
     <script type="text/javascript" src="../static/js/site/app.js" th:src="@{js/site/app.js}"></script>
     <script type="text/javascript" src="../static/js/site/controllers/home-controller.js" th:src="@{js/site/controllers/home-controller.js}"></script>
+    <script type="text/javascript" src="../static/js/site/controllers/production-controller.js" th:src="@{js/site/controllers/production-controller.js}"></script>
     <script type="text/javascript" src="../static/js/site/directives/docked-menu.js" th:src="@{js/site/directives/docked-menu.js}"></script>
 </body>
 </html>

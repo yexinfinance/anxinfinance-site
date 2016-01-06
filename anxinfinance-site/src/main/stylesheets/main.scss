@@ -1,8 +1,4 @@
-$default-menu-font-color: white;
-$default-font-color: #333;
-$disabled-menu-item-color: #aaa;
-$sandbox-width: 1080px;
-
+@import 'constants';
 
 html {
   overflow-x: hidden;
@@ -194,3 +190,40 @@ footer {
     }
   }
 }
+
+.watchword {
+  display: flex;
+  max-width: $sandbox-width;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  li {
+    color: white;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (max-width:1920px) and (min-width:640px) {
+  .watchword {
+    padding-top: 1.5rem;
+
+    li {
+      font-size: 0.35rem;
+      line-height: 0.47rem;
+    }
+  }
+}
+
+@media screen and (max-width:580px) {
+  .watchword {
+    padding-top: 0.8rem;
+
+    li {
+      font-size: 0.24rem;
+      line-height: 0.36rem;
+    }
+  }
+}
+
