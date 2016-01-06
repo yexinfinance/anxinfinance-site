@@ -1,5 +1,4 @@
 .home {
-
   header {
     border-bottom: solid 1px #efefef;
   }
@@ -17,57 +16,6 @@
       font-weight: lighter;
       line-height: 0.42rem;
     }
-  }
-
-  nav {
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
-    display: flex;
-    height: 0.65rem;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
-
-  nav.dock-top {
-    background-color: rgba(255, 255, 255, 0.95);
-    position: fixed;
-    top: 0;
-  }
-
-  nav.float {
-    background-color: white;
-    position: static;
-  }
-
-  .brand {
-    img {
-      height: 0.52rem;
-    }
-
-    h3 {
-      font-size: 0.25rem;
-      margin: -0.4rem 0 0 0.54rem;
-
-      small {
-        display: block;
-        font-size: 0.12rem;
-      }
-    }
-  }
-
-  .main-nav {
-    margin: 0;
-
-    a.disabled {
-      color: #aaa;
-      cursor: default;
-      text-decoration: none;
-    }
-  }
-
-  .menu-icon-sticky {
-    display: none;
   }
 
   .content {
@@ -128,19 +76,6 @@
 
 @media screen and (max-width:580px) {
   .home {
-    nav {
-      height: 0.8rem;
-      padding: 0 0.3rem;
-    }
-
-    .main-nav {
-      display: none;
-    }
-
-    .menu-icon-sticky {
-      display: inline;
-    }
-
     .content {
       .articles {
         width: 5rem;
