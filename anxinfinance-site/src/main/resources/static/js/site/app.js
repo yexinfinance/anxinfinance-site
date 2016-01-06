@@ -1,24 +1,35 @@
-angular.module("site", ["ui.router", "common"])
-    .config(function ($stateProvider, $urlRouterProvider) {
-        var defaultUrl = "/home";
+var app = angular.module("site", ["ui.router", "common"])
 
-        $stateProvider
-            .state("home", {
-                url: defaultUrl,
-                templateUrl: "/templates/home.html",
-                controller: "HomeController",
-                data: {
-                    channel: "home"
-                }
-            })
-            .state("production", {
-                url: "/production",
-                templateUrl: "/templates/production.html",
-                controller: "ProductionController",
-                data: {
-                    channel: "production"
-                }
-            });
+app.config(function ($stateProvider, $urlRouterProvider) {
+    var defaultUrl = "/home";
 
-        $urlRouterProvider.otherwise(defaultUrl);
+    $stateProvider
+        .state("home", {
+            url: defaultUrl,
+            templateUrl: "/templates/home.html",
+            controller: "HomeController",
+            data: {
+                channel: "home"
+            }
+        })
+        .state("production", {
+            url: "/production",
+            templateUrl: "/templates/production.html",
+            controller: "ProductionController",
+            data: {
+                channel: "prod"
+            }
+        });
+
+    $urlRouterProvider.otherwise(defaultUrl);
+});
+
+app.controller("MainController", ["$scope", "$rootScope", function ($scope, $rootScope) {
+    var defaultChannel = "home";
+    
+    $rootScope.$on("$stateChangeStart", function (event, toState) {
+        $scope.channel = !!toState.data && !!toState.data.channel
+            ? toState.data.channel
+            : defaultChannel;
     });
+}]);

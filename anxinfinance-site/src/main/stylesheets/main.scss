@@ -93,6 +93,7 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 
     .brand {
       img {
@@ -211,7 +212,7 @@ footer {
 
     li {
       font-size: 0.35rem;
-      line-height: 0.47rem;
+      line-height: 0.56rem;
     }
   }
 }
@@ -222,7 +223,7 @@ footer {
 
     li {
       font-size: 0.24rem;
-      line-height: 0.36rem;
+      line-height: 0.38rem;
     }
   }
 }
