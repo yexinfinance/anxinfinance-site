@@ -46,9 +46,24 @@ $icon-diameter: 2rem;
       }
     }
 
+    .industry-cloud {
+      margin-top: -3.55rem;
+      @include horizontal-align-center();
+    }
+
+    #cloudDynamic {
+      height: 3.5rem;
+      width: 5rem;
+    }
+
+    @media screen and (max-width:580px) {
+      .industry-cloud {
+        margin-top: 0;
+      }
+    }
+
     .partners {
       border-top: solid 1px #e5e5e5;
-      margin-top: 1rem;
       @include vertical-align-center();
 
       .intro {

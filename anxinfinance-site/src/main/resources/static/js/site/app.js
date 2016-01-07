@@ -1,4 +1,4 @@
-var app = angular.module("site", ["ui.router", "common"]);
+var app = angular.module("site", ["ui.router", "angular-jqcloud", "common"]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     var defaultUrl = "/home";
