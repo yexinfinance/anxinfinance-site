@@ -18,7 +18,7 @@ $wealth-end-color: #8abb28;
 
     .end2end {
       padding: 0.2rem 0.8rem;
-      @include horizontal-space-between();
+      @include horizontal-space-between-on-middle();
 
       .asset-end {
         @include vertical-align-center();
@@ -105,7 +105,7 @@ $wealth-end-color: #8abb28;
       .channels {
         margin: 0.05rem 0;
         padding: 0 0.3rem;
-        @include horizontal-space-between();
+        @include horizontal-space-between-on-middle();
       }
     }
 
@@ -127,7 +127,7 @@ $wealth-end-color: #8abb28;
         }
 
         .channels {
-          @include vertical-space-between();
+          @include vertical-space-between-on-center();
         }
       }
     }
@@ -150,7 +150,7 @@ $wealth-end-color: #8abb28;
 
     .flows {
       margin-top: -0.37rem;
-      @include horizontal-align-top();
+      @include horizontal-align-top-center();
 
       .flow {
         padding: 0 0.2rem;

@@ -29,6 +29,8 @@ $progress-step-height: 0.5rem;
         .services {
           font-size: 0.15rem;
           text-align: center;
+          width: 100%;
+          padding: 0 0.3rem;
         }
       }
     }
@@ -108,7 +110,7 @@ $progress-step-height: 0.5rem;
 
       .diagram-tip {
         margin-top: 0.2rem;
-        @include vertical-space-between();
+        @include vertical-space-between-on-center();
 
         label {
           color: #666;
@@ -137,6 +139,7 @@ $progress-step-height: 0.5rem;
         .step {
           display: flex;
           float: left;
+          font-size: 0.11rem;
           margin: 0.05rem 0 0.05rem 0.21rem;
           position: relative;
 

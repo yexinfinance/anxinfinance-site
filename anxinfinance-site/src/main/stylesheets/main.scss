@@ -206,6 +206,7 @@ ul, label {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0;
     max-width: $sandbox-width;
     justify-content: center;
     position: absolute;
@@ -214,7 +215,6 @@ ul, label {
 
     li {
       color: white;
-      font-weight: lighter;
     }
   }
 }

@@ -4,13 +4,13 @@
   justify-content: center;
 }
 
-@mixin horizontal-align-top() {
+@mixin horizontal-align-top-center() {
   align-items: flex-start;
   display: flex;
   justify-content: center;
 }
 
-@mixin horizontal-space-between() {
+@mixin horizontal-space-between-on-middle() {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -35,8 +35,8 @@
   justify-content: center;
 }
 
-@mixin vertical-space-between() {
-  @include horizontal-space-between();
+@mixin vertical-space-between-on-center() {
+  @include horizontal-space-between-on-middle();
   flex-direction: column;
 }
 

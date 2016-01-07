@@ -12,6 +12,10 @@ $icon-diameter: 1.8rem;
         width: $icon-diameter;
         @include vertical-align-center();
 
+        img {
+          width: 1.1rem;
+        }
+
         label {
           color: white;
           font-size: 0.2rem;
