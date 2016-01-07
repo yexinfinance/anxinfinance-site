@@ -62,7 +62,7 @@ $icon-diameter: 2rem;
       }
     }
 
-    .partners {
+    .customers {
       border-top: solid 1px #e5e5e5;
       @include vertical-align-center();
 
@@ -74,7 +74,7 @@ $icon-diameter: 2rem;
       ul {
         width: 100%;
 
-        .partner {
+        .customer {
           align-items: center;
           border: solid 1px #edecec;
           border-radius: 0.03rem;
