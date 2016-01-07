@@ -1,4 +1,4 @@
-var app = angular.module("site", ["ui.router", "common"])
+var app = angular.module("site", ["ui.router", "common"]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     var defaultUrl = "/home";
@@ -18,6 +18,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controller: "ProductionController",
             data: {
                 channel: "prod"
+            }
+        })
+        .state("client", {
+            url: "/client",
+            templateUrl: "/templates/client.html",
+            controller: "ClientController",
+            data: {
+                channel: "client"
             }
         });
 

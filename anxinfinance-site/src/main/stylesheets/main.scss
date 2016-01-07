@@ -19,7 +19,7 @@ footer {
   justify-content: center;
 }
 
-ul {
+ul, label {
   font-size: 0.14rem;
 }
 
@@ -233,3 +233,13 @@ ul {
   }
 }
 
+.content {
+  padding: 0.5rem 1.3rem;
+}
+
+
+@media screen and (max-width:580px) {
+  .content {
+    padding: 0.5rem 0.7rem;
+  }
+}

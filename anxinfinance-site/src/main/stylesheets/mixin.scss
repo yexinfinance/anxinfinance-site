@@ -16,6 +16,12 @@
   justify-content: space-between;
 }
 
+@mixin horizontal-space-between-on-top() {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin vertical-align-center() {
   align-items: center;
   display: flex;
@@ -26,4 +32,9 @@
 @mixin vertical-space-between() {
   @include horizontal-space-between();
   flex-direction: column;
+}
+
+@mixin intro-medium {
+  font-size: 0.25rem;
+  text-align: center;
 }

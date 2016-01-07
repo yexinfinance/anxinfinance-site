@@ -1,0 +1,81 @@
+@import "mixin";
+
+$icon-diameter: 2rem;
+
+.client {
+  .content {
+    .to-industries {
+      @include horizontal-space-between-on-top();
+
+      .icon {
+        height: $icon-diameter;
+        width: $icon-diameter;
+        @include vertical-align-center();
+
+        label {
+          color: white;
+          font-size: 0.2rem;
+          font-weight: lighter;
+          margin-top: 0.1rem;
+        }
+      }
+
+      .anxin-alliance {
+        width: $icon-diameter;
+
+        .icon {
+          background-color: #eb8100;
+        }
+      }
+
+      .credit-info {
+        width: $icon-diameter;
+
+        .icon {
+          background-color: #19bd9b;
+        }
+      }
+
+      .diagram-tip {
+        margin-top: 0.2rem;
+        @include vertical-align-center();
+
+        label {
+          font-size: 0.17rem;
+        }
+      }
+    }
+
+    .partners {
+      border-top: solid 1px #e5e5e5;
+      margin-top: 1rem;
+      @include vertical-align-center();
+
+      .intro {
+        padding: 0.4rem 0;
+        @include intro-medium();
+      }
+
+      ul {
+        width: 100%;
+
+        .partner {
+          align-items: center;
+          border: solid 1px #edecec;
+          border-radius: 0.03rem;
+          display: flex;
+          float: left;
+          height: 0.65rem;
+          justify-content: center;
+          margin: 0.07rem;
+          padding: 0.03rem 0.05rem;
+          width: 1.5rem;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
