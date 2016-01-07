@@ -27,6 +27,14 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             data: {
                 channel: "client"
             }
+        })
+        .state("service", {
+            url: "/service",
+            templateUrl: "/templates/service.html",
+            controller: "ServiceController",
+            data: {
+                channel: "service"
+            }
         });
 
     $urlRouterProvider.otherwise(defaultUrl);
