@@ -197,24 +197,29 @@ ul, label {
   }
 }
 
-.watchword {
-  display: flex;
-  max-width: $sandbox-width;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.title-group {
+  position: relative;
 
-  li {
-    color: white;
-    font-weight: lighter;
+  .watchword {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: $sandbox-width;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    li {
+      color: white;
+      font-weight: lighter;
+    }
   }
 }
 
 @media screen and (max-width:1920px) and (min-width:640px) {
   .watchword {
-    padding-top: 1.5rem;
-
     li {
       font-size: 0.35rem;
       line-height: 0.56rem;
