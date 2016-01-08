@@ -16,7 +16,14 @@ $active-tab-color: #58bbc0;
 
       a {
         color: #666;
+        font-size: 0.14rem;
         text-align: center;
+      }
+
+      @media screen and (max-width:580px) {
+        a {
+          font-size: 0.2rem;
+        }
       }
 
       a:hover {
@@ -39,11 +46,17 @@ $active-tab-color: #58bbc0;
 
       .idea {
         float: left;
-        height: 1rem;
+        min-height: 1rem;
         width: 3.8rem;
 
         h4 {
           color: $active-tab-color;
+        }
+      }
+
+      @media screen and (max-width:580px) {
+        .idea {
+          width: 100%;
         }
       }
 
@@ -59,7 +72,7 @@ $active-tab-color: #58bbc0;
         padding-top: 0.3rem;
         @include horizontal-align-top-left();
 
-        img {
+        .qrcode {
           width: 1.6rem;
         }
 
