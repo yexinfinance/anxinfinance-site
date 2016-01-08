@@ -171,7 +171,7 @@ $wealth-end-color: #8abb28;
     }
 
     .application-scenarios {
-      border-top: solid 1px #e5e5e5;
+      @include add-separator();
       @include vertical-align-center();
 
       .intro {

@@ -66,3 +66,7 @@
     width: 100%;
   }
 }
+
+@mixin add-separator {
+  border-top: solid 1px #e5e5e5;
+}
