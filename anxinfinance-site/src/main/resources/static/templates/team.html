@@ -1,0 +1,24 @@
+<div class="team">
+    <header>
+        <hgroup class="title-group">
+            <img class="img-responsive" src="../images/about-us-title-background.jpg" />
+            <h2 class="watchword">
+                <ul>
+                    <li>技术驱动金融互联网＋</li>
+                </ul>
+            </h2>
+        </hgroup>
+    </header>
+
+    <div class="content">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ng-class="{'active': tab == 'team/about-us'}">
+                <a ui-sref="about-us">关于我们</a>
+            </li>
+            <li role="presentation" ng-class="{'active': tab == 'team/join-us'}">
+                <a ui-sref="join-us">加入我们</a>
+            </li>
+        </ul>
+        <div class="tab-content" ui-view></div>
+    </div>
+</div>

@@ -4,6 +4,11 @@
   justify-content: center;
 }
 
+@mixin horizontal-align-top-left() {
+  align-items: flex-start;
+  display: flex;
+}
+
 @mixin horizontal-align-top-center() {
   align-items: flex-start;
   display: flex;

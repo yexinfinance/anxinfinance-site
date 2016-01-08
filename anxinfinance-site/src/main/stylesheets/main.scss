@@ -20,8 +20,16 @@ footer {
   justify-content: center;
 }
 
-ul, label {
+ul, label, div, span {
   font-size: 0.14rem;
+}
+
+h2 {
+  font-size: 0.3rem;
+}
+
+h4 {
+  font-size: 0.22rem;
 }
 
 @media screen and (max-width:1920px) and (min-width:640px) {

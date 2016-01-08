@@ -16,6 +16,7 @@
     <link type="text/css" href="../static/generated_css/production.css" th:href="@{generated_css/production.css}" rel="stylesheet" />
     <link type="text/css" href="../static/generated_css/client.css" th:href="@{generated_css/client.css}" rel="stylesheet" />
     <link type="text/css" href="../static/generated_css/service.css" th:href="@{generated_css/service.css}" rel="stylesheet" />
+    <link type="text/css" href="../static/generated_css/team.css" th:href="@{generated_css/team.css}" rel="stylesheet" />
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../static/js/compatibility/html5.js" th:src="@{js/compatibility/html5.js}"></script>
@@ -35,7 +36,7 @@
                 <li ng-class="{'active': channel === 'prod'}"><a ui-sref="production">产品</a></li>
                 <li ng-class="{'active': channel === 'client'}"><a ui-sref="client">客户关系</a></li>
                 <li ng-class="{'active': channel === 'service'}"><a ui-sref="service">服务体系</a></li>
-                <li class="disabled"><a href="#">关于我们</a></li>
+                <li ng-class="{'active': channel === 'team'}"><a ui-sref="about-us">团队简介</a></li>
             </ul>
             <img class="menu-icon-sticky" src="../static/images/menu-icon-sticky.png" th:src="@{images/menu-icon-sticky.png}" />
         </nav>
@@ -59,6 +60,7 @@
     <script type="text/javascript" src="../static/js/site/controllers/production-controller.js" th:src="@{js/site/controllers/production-controller.js}"></script>
     <script type="text/javascript" src="../static/js/site/controllers/client-controller.js" th:src="@{js/site/controllers/client-controller.js}"></script>
     <script type="text/javascript" src="../static/js/site/controllers/service-controller.js" th:src="@{js/site/controllers/service-controller.js}"></script>
+    <script type="text/javascript" src="../static/js/site/controllers/team-controller.js" th:src="@{js/site/controllers/team-controller.js}"></script>
     <script type="text/javascript" src="../static/js/site/directives/docked-menu.js" th:src="@{js/site/directives/docked-menu.js}"></script>
 </body>
 </html>

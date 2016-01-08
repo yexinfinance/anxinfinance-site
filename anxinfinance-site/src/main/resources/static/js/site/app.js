@@ -35,6 +35,35 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             data: {
                 channel: "service"
             }
+        })
+        .state("team", {
+            url: "/team",
+            abstract: true,
+            templateUrl: "/templates/team.html",
+            controller: "TeamController",
+            data: {
+                channel: "team"
+            }
+        })
+        .state("about-us", {
+            url: "/about-us",
+            parent: "team",
+            templateUrl: "/templates/team/about-us.html",
+            controller: "AboutUsController",
+            data: {
+                channel: "team",
+                tab: "team/about-us"
+            }
+        })
+        .state("join-us", {
+            url: "/join-us",
+            parent: "team",
+            templateUrl: "/templates/team/invitation.html",
+            controller: "InvitationController",
+            data: {
+                channel: "team",
+                tab: "team/join-us"
+            }
         });
 
     $urlRouterProvider.otherwise(defaultUrl);
@@ -47,5 +76,14 @@ app.controller("MainController", ["$scope", "$rootScope", function ($scope, $roo
         $scope.channel = !!toState.data && !!toState.data.channel
             ? toState.data.channel
             : defaultChannel;
+
+        var currentTab = "";
+        if ($scope.channel == "team") {
+            var currentTab = "team/about-us";
+        }
+
+        $scope.tab = !!toState.data && !!toState.data.tab
+            ? toState.data.tab
+            : currentTab;
     });
 }]);
