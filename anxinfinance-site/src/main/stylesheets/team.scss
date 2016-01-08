@@ -92,6 +92,30 @@ $active-tab-color: #58bbc0;
           display: none;
         }
       }
+
+      .partners {
+        border-top: solid 1px #e5e5e5;
+        margin-top: 0.3rem;
+        @include vertical-align-center();
+
+        .intro {
+          padding: 0.4rem 0;
+          @include intro-medium();
+        }
+
+        ul {
+          width: 100%;
+
+          .partner {
+            @include brand();
+          }
+
+          .credit-ease>img {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
     }
   }
 }

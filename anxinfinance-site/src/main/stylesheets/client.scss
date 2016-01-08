@@ -78,20 +78,7 @@ $icon-diameter: 1.8rem;
         width: 100%;
 
         .customer {
-          align-items: center;
-          border: solid 1px #edecec;
-          border-radius: 0.03rem;
-          display: flex;
-          float: left;
-          height: 0.65rem;
-          justify-content: center;
-          margin: 0.07rem;
-          padding: 0.03rem 0.05rem;
-          width: 1.5rem;
-
-          img {
-            width: 100%;
-          }
+          @include brand();
         }
       }
     }
